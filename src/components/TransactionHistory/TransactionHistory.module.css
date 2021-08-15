@@ -1,0 +1,16 @@
+.table {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: cyan;
+}
+.title {
+  padding: 10px;
+}
+.line {
+  background-color: whitesmoke;
+}
+.value {
+  text-align: center;
+  padding: 10px;
+}
