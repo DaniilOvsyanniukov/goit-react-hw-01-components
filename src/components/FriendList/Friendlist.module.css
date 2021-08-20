@@ -3,7 +3,6 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: start;
   grid-gap: 1em;
   grid-auto-rows: 60px;
   padding: 0;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from 'components/Profile/Profile.module.css';
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
@@ -28,3 +29,11 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
 };
 
 export default Profile;
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.object,
+};

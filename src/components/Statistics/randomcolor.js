@@ -7,7 +7,6 @@ export function randomColor() {
     ',' +
     Math.round(Math.random() * 255) +
     ')';
-  console.log(color);
 
   return color;
 }

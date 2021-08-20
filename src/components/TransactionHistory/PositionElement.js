@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
-const PositionElement = ({ id, type, amount, currency }) => {
+const PositionElement = ({ type, amount, currency }) => {
   return (
-    <tr key={id} className={s.line}>
+    <tr className={s.line}>
       <td className={s.value}>{type}</td>
       <td className={s.value}>{amount}</td>
       <td className={s.value}>{currency}</td>
@@ -9,3 +10,9 @@ const PositionElement = ({ id, type, amount, currency }) => {
   );
 };
 export default PositionElement;
+
+PositionElement.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
